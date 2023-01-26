@@ -1,0 +1,23 @@
+<div class="replies">
+	<div class="main">
+		<div class="left">
+			<button type="button" (click)="likeClick()" ><i class="fa fa-thumbs-up"></i></button>
+			<div>{{comment.votes}}</div>
+			<button type="button" (click)="dislikeClick()"><i class="fa fa-thumbs-down"></i></button>
+		</div>
+		<div class="right">
+			<div class="detail">
+				<span class="user">{{comment.username}}</span>
+				<span class="date">{{comment.date}}</span>
+
+			</div>
+			<div class="comment">
+				<p>{{comment.text}}</p>
+			</div>
+			<a (click)="replyClick()">Reply</a>
+			<app-comment-box (add)="onAdd($event)" *ngIf="isEditing"></app-comment-box>
+		</div>
+	</div>
+	<br />
+	<app-comment *ngFor="let c of comment.comments" [comment]="c"></app-comment>
+</div>

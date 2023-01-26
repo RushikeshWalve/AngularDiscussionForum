@@ -1,0 +1,13 @@
+p {
+    color: black;
+    text-indent: 30px;
+    text-transform: uppercase;
+    background-color: lightgrey;
+    border-style: outset;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+
+:host{
+  background-color:rgb(230, 108, 108);
+}

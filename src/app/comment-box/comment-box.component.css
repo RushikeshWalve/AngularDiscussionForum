@@ -1,0 +1,25 @@
+:host textarea {
+    width: 100%;
+      padding: 5px;
+      margin: 5px 0px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 0.50px;
+      border: 0.50px solid #29292e;
+      font-size: 1.5rem;
+      font-family: inherit;
+      color: inherit;
+      transition: all 0.3s;
+  }
+
+  .btn {
+    background-color: #d74c15;
+    color: #1f2034;
+    font-size: 0.75em;
+    padding: 10px 25px;
+    border: 1px solid #0d0d0c;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.3s;
+}
+
